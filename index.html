@@ -1,0 +1,71 @@
+<style>
+body {
+  background-image: url('../static/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style> 
+
+<html>
+
+    <head>
+        <title>Texture | Flask</title>
+        <script type="text/javascript" src="{{ url_for('static', filename='home_en.js') }}"  ></script>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            .input-form{
+                width: 400px;
+            }
+            .main-container{
+                margin-top: 100px;
+            }
+            .analysis-btn{
+
+                width: 100px;
+                padding: 10px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+		<br>
+		<center><img src="../static/kfupm.png" alt="kfupm logo" width="360" height="193"><center>		
+
+           <div class="main-container">
+                  <center><h2 class="mb-3" style="color:white">Welcome to Bark Texture Detection-Group Project</h2></center>
+              <center><h3 class="mb-3" style="color:white">Data Glacier Final Project</h3></center>
+              <center><h4 class="mb-3" style="color:white">September 2022</h4></center>
+              
+              <center><img src="../static/Fire.png" alt="chemical" width="120" height="100"><center>
+              
+              <br> <br>
+                <center>
+
+                    <p style="color:white"><b>Choose one of the following methods:</b></p>
+                    
+                    <button class="btn btn-success mt-1" onclick="document.location='http://localhost:5000/vgg/'">Try VGG16 Model</button>
+                    <br>
+                    <hr>
+                    <button class="btn btn-success mt-1" onclick="document.location='http://localhost:5000/xception/'">Try Xception Model</button>
+                    <br>
+                    <hr>
+                    <p><b>.</b><p>
+                   
+                </center>
+
+           </div>
+
+
+
+
+
+    </body>
+
+</html>
+
+
+
+
